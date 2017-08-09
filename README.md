@@ -12,5 +12,5 @@
 
 ```bash
 docker build -t panmax/docker-flask .
-docker run --name docker-flask -p 5000:5000 panmax/docker-flask
+docker run -d --name docker-flask --restart=always -p 5000:5000 panmax/docker-flask
 ```
